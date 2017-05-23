@@ -4,15 +4,50 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Watch App (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Watch App (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Watch App Pages.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Watch App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>415476F11EC5AF1A00CEFF50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>415477081EC5AF4C00CEFF50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>415477311EC5AF6B00CEFF50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4154775B1EC5AF9700CEFF50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>415477851EC5B1EA00CEFF50</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="g7x-1t-HDM">
+                            <items>
+                                <tableRow identifier="XBCustomTableRow" id="4U4-jH-di7" customClass="XBCustomTableRow" customModule="Watch_App_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="2HN-aK-J0t" customClass="XBCustomTableRow" customModule="Watch_App_Extension">
+                                        <items>
+                                            <label width="1" height="100" alignment="left" text="12321312" textAlignment="left" id="42l-uI-Fpj"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="42l-uI-Fpj" id="AHu-YM-aqf"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="g7x-1t-HDM" id="i9p-Uc-2j8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-196" y="346"/>
+        </scene>
+        <!--MENU-->
+        <scene sceneID="4WH-IL-1rA">
+            <objects>
+                <controller identifier="MENU" title="MENU" id="srh-gR-Rys">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="按压" textAlignment="center" id="MlK-ql-Ngh">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="50"/>
+                        </label>
+                    </items>
+                    <menu key="menu" id="EK3-Ft-CzR">
+                        <items>
+                            <menuItem title="添加" icon="add" id="KYj-Rw-NI7"/>
+                            <menuItem title="详情" icon="info" id="5Fa-Wr-Nez"/>
+                            <menuItem title="支付" icon="play" id="B7e-4p-DzM"/>
+                            <menuItem title="分享" icon="share" id="4rE-sA-Nrd"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="124" y="50"/>
+        </scene>
+        <!--Page1-->
+        <scene sceneID="y0p-6E-Uos">
+            <objects>
+                <controller identifier="XBPageInterfaceController1" title="Page1" alwaysBounce="YES" id="z3r-ZB-g2b" customClass="XBPageInterfaceController" customModule="Watch_App_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="1" textAlignment="center" id="aTU-QC-2Sm">
+                            <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="100"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <segue destination="w5T-yU-4yD" kind="relationship" relationship="nextPage" id="c6h-On-kVg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="133" y="346"/>
+        </scene>
+        <!--Page2-->
+        <scene sceneID="AYy-37-qCi">
+            <objects>
+                <controller identifier="XBPageInterfaceController2" title="Page2" id="w5T-yU-4yD" customClass="XBPageInterfaceController" customModule="Watch_App_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="2" textAlignment="center" id="O8F-s4-YIu">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="100"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <segue destination="NL2-Or-x2n" kind="relationship" relationship="nextPage" id="Qe8-My-bxg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="386" y="346"/>
+        </scene>
+        <!--Page3-->
+        <scene sceneID="93t-Zi-TO0">
+            <objects>
+                <controller identifier="XBPageInterfaceController3" title="Page3" id="NL2-Or-x2n" customClass="XBPageInterfaceController" customModule="Watch_App_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="3" textAlignment="center" id="T8o-wS-Ps7">
+                            <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="100"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <segue destination="Kpp-y7-fJN" kind="relationship" relationship="nextPage" id="B8g-zI-PPv"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="642" y="346"/>
+        </scene>
+        <!--Page4-->
+        <scene sceneID="2au-z6-6ph">
+            <objects>
+                <controller identifier="XBPageInterfaceController4" title="Page4" id="Kpp-y7-fJN" customClass="XBPageInterfaceController" customModule="Watch_App_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="4" textAlignment="center" id="gyJ-Wr-eEi">
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="100"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="882" y="346"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Watch_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
